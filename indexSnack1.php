@@ -49,8 +49,18 @@ $matches = [
 <body>
     <h1>Partite!</h1>
 
-    <?php?>
-    <?php?>
-
+    <ul>
+        <?php foreach($matches as $match){?>
+            <li>
+                <?php echo $match['team1'] .' ' ?>
+                -
+                <?php echo $match['team2'] .' ' ?>
+                |
+                <?php echo $match['point_team_1'] .' ' ?>
+                -
+                <?php echo $match['point_team_2'] .' ' ?>
+            </li>
+        <?php } ?>    
+    </ul>
 </body>
 </html>
